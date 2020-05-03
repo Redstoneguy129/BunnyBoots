@@ -10,10 +10,11 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum BootsMaterial implements IArmorMaterial {
-    BUNNY( "bunnyboots",200, new int[]{3,3,3,3}, 30, 0);
+    BUNNY( "bunnyboots",200, new int[]{1,0,0,0}, 20, 0);
 
     private String name;
     private int durability;
+    private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
     private int[] damageReductionAmount;
     private int enchantability;
     private float toughness;
@@ -28,7 +29,7 @@ public enum BootsMaterial implements IArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlotType equipmentSlotType) {
-        return this.durability;
+        return MAX_DAMAGE_ARRAY[equipmentSlotType.getIndex()] * this.durability;
     }
 
     @Override
