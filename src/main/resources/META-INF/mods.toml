@@ -1,20 +1,20 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[32,)"
 [[mods]]
 modId="bunnyboots"
-version="1.0"
-displayName="bunnyboots"
+version="1.1"
+displayName="Bunny Boots"
 authors="Redstoneguy129"
 description="Bunny Boots made for the MMD Jam!"
 [[dependencies.bunnyboots]]
     modId="forge"
     mandatory=true
-    versionRange="[31,)"
+    versionRange="[32,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.bunnyboots]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.16.1]"
     ordering="NONE"
     side="BOTH"
